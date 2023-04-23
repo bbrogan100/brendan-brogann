@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+    <title>Form results - submitted user data</title> 
+
+<link href="css/layout.css" type="text/css" rel="stylesheet">     
+    
+      <meta charset="UTF-8">
+    
+  <meta name="description" content="cdm web dev 2/Universal Design website project">
+  <meta name="keywords" content="HTML, CSS, CDM UD">
+  <meta name="author" content="Brendan Brogan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body>
+
+        <hr>
+        
+            <nav>
+        
+<!-- Navbar link 1-->
+        <li> <a href="index.html">Home</a></li>
+        
+<!-- Navbar link 2-->
+        <li><a href="about.html">About</a></li>  
+        
+<!-- Navbar link 3-->
+        <li><a href="transport.html">Transport</a></li>
+        
+<!-- Navbar link 4-->
+         <li><a href="contactpage.html">Contact page</a></li>
+        
+        
+        <div class="dropdown">
+            <button class="dropbtn">Where to go?
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <li><a href="wheretogo.html">Menu</a></li>
+                <li><a href="eyresquare.html">Eyre Square</a></li>
+                <li><a href="shopstreet.html">Shop Street</a></li>
+                <li><a href="spanisharch.html">Spanish Arch</a> </li>
+                <li><a href="salthill.html">Salthill</a> </li>
+            </div>
+        </div> 
+        
+    </nav>
+    
+    <hr> 
+    
+    <div class="results" id="box1" >
+    <h1>You are registered!</h1>
+    <p>The information you have submitted has been received, thank you for helping make Galway City more accessable to everyone</p>    
+
+        <h3>Your submitted data</h3>
+        <div id="userdata"></div>
+        <p> <a href="index.html">return to registration page</a> </p>
+    </div>      
+    <div id="userdata"></div>
+        
+            <script>
+       
+        const dataList = document.getElementById("userdata")
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            dataList.append(`${name}: ${value}`)
+            dataList.append(document.createElement('br'))
+        }) 
+   
+    </script>
+        
+</body>
+
+</html>

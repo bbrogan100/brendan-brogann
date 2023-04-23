@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Contact page</title>
+<link href="css/layout.css" type="text/css" rel="stylesheet"> 
+     
+    <meta charset="UTF-8">
+    
+  <meta name="description" content="cdm web dev 2/Universal Design website project">
+  <meta name="keywords" content="HTML, CSS, CDM UD">
+  <meta name="author" content="Brendan Brogan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
+</head>
+    
+<body>
+    
+    <header>
+        <h1>Accessibility in Galway City</h1>
+    </header>    
+    
+
+    
+    
+    <aside>
+    <h2>Technological University Dublin - Blanchardstown</h2>
+    </aside>
+    
+    
+    <hr>
+        
+        <nav>
+        
+<!-- Navbar link 1-->
+        <li> <a href="index.html">Home</a></li>
+        
+<!-- Navbar link 2-->
+        <li><a href="about.html">About</a></li>  
+        
+<!-- Navbar link 3-->
+        <li><a href="transport.html">Transport</a></li>
+
+<!-- Navbar link 4-->
+        <li><a href="improvements.html">Improvements</a></li>     
+        
+<!-- Navbar link 5-->
+         <li><a href="contactpage.html">Contact page</a></li>
+        
+        
+        <div class="dropdown">
+            <button class="dropbtn">Where to go?
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <li><a href="wheretogo.html">Menu</a></li>
+                <li><a href="eyresquare.html">Eyre Square</a></li>
+                <li><a href="shopstreet.html">Shop Street</a></li>
+                <li><a href="spanisharch.html">Spanish Arch</a> </li>
+                <li><a href="salthill.html">Salthill</a> </li>
+            </div>
+        </div> 
+        
+    </nav>
+    
+    <hr> 
+    
+    
+    
+     <main>
+<div id="box1">
+         
+ <form action="userdata.html" method="get" enctype="multipart/form-data">
+     
+    <div id="box2">
+        <legend><h2>Login details</h2></legend> 
+         </div>
+    <fieldset id="box1" >
+        
+    <p>Please enter your details below</p>    
+        
+    <div>    
+    <label for="firstname">First name: </label>
+        <input type="text" name="firstname" id="firstname" required>
+    </div>
+   
+    <div>
+     <label for="lastname">last name: </label>
+        <input type="text" name="lastname" id="lastname" required>
+    </div>
+        
+    <div>
+    <label for="email">Email: </label>  
+    <input type="email" name="email" id="email" required>    
+    </div>  
+        
+    <div>
+    <label for="tel">Phone: </label>
+    <input type="tel" name="tel" id="tel">
+    </div>    
+        
+    <div>    
+    <label for="password">Password: </label>
+        <input type="password" name="password" id="password" required>
+    </div>
+        
+    </fieldset>    
+     
+    <div id="box2">
+        <legend><h2>A bit about yourself</h2></legend> 
+         </div>
+     
+    <fieldset id="box1" >
+        
+    <p>When and where you were born</p>    
+        
+    <div>    
+    <label for="country ">Country: </label>
+        <input type="text" name="country" id="country" value="Ireland">
+    </div>
+        
+        <div>    
+    <label for="Nationality">Country: </label>
+        <input type="text" name="Nationality" id="Nationality" placeholder="If dual, enter both" >
+    </div>    
+    
+    <div>
+    <label for="age">age:</label>
+    <input type="number" name="age" id="age" min="0" max="150">    
+    </div>  
+        
+    <div>
+    <label for="dob">Date of birth:</label>  
+    <input type="date" name="dob" id="dob" max="2006-06-17">    
+    </div>    
+        
+    </fieldset>    
+    
+     
+     <div id="box2">
+        <legend><h2>Lets talk about Galway City</h2></legend> 
+         </div> 
+     
+    <fieldset id="box1" >
+                
+    <p> What areas did you visit when you were in Galway City? </p>
+    
+    <div> 
+    <input type="checkbox" name="salthillanswer" id="salthillanswer">     
+    <label for="salthillanswer" id="salthillanswer">Salthill</label>    
+    </div>  
+        
+     <div> 
+    <input type="checkbox" name="Shopstreetanswer" id="Shopstreetanswer">     
+    <label for="Shopstreetanswer" id="Shopstreetanswer">Shopstreet</label>    
+    </div> 
+        
+     <div> 
+    <input type="checkbox" name="eyresquareanswer" id="eyresquareanswer" checked >     
+    <label for="eyresquareanswer" id="eyresquareanswer">Eyre Square</label>    
+    </div> 
+         
+     <div> 
+    <input type="checkbox" name="sparch" id="sparch">     
+    <label for="sparch" id="sparch">Spanish Arch</label>    
+    </div> 
+            
+        
+    <p>which was your favorite place to visit</p>    
+        
+    <div>
+    <input type="radio" name="salthillanswer" id="salthillanswer" value="salthillanswer" checked>
+    <label for="salthillanswer">Salthill</label>    
+    </div> 
+    
+      <div>
+    <input type="radio" name="Shopstreetanswer" id="Shopstreetanswer" value="Shopstreetanswer">
+    <label for="Shopstreetanswer">Shopstreet</label>    
+    </div>   
+        
+      <div>
+    <input type="radio" name="eyresquareanswer" id="eyresquareanswer" value="eyresquareanswer">
+    <label for="eyresquareanswer">Eyre Square</label>    
+    </div>   
+        
+      <div>
+    <input type="radio" name="sparch" id="sparch" value="sparch">
+    <label for="sparch">Spanish Arch</label>    
+    </div>   
+        
+  </fieldset> 
+    
+      <div id="box2">
+        <legend><h2>While you were in Galway...</h2></legend> 
+         </div>
+     
+    <fieldset id="box1" >
+        
+    <p>out the places listed, which one did you find the most accessable?</p>    
+        
+    <div>
+    <label for="access">Choose a place:</label>
+    <select name="access" id="access">
+        <optgroup label="inner city">
+            <option value="eyresquareanswer">Eyre Square</option>
+            <option value="shopstreetanswer">Shopstreet</option>
+            <option value="sparch">Spanish Arch</option>
+        </optgroup>
+        <optgroup label="outer city">
+            <option value="salthillanswer">Salthill</option>
+        </optgroup>    
+     </select>     
+    </div>    
+        
+    <p>Where there any glaring issues regarding accessability that you encountered when you were in Galway City?</p>    
+    <div>
+    <label for="problemnumber">Your answer:</label>
+    <select name="problemnumber" id="problemnumber" multiple>
+        <option value="0">None</option>
+        <option value="1">1</option>
+        <option value="2+">Mulitiple</option>
+    </select>    
+    </div>   
+        
+    <p>If there where any Issues, could you please tell us about them?</p>
+        
+    <div>
+        <label for="problemtext">Your answer:</label>
+        <textarea name="problemtext" id="problemtext" cols="50" rows="4" placeholder="Please let us know about any issues you encountered regarding accessability:  "></textarea> 
+    </div>
+        
+        <p>To be in for with the chance of winning a gift voucher, please upload a picture of you enjoying your time in Galway City</p>
+        
+        <div>
+        <label for="myfile"> select a file</label>
+        <input type="file" name="myfile" id="myfile">    
+        </div>
+        
+    </fieldset>    
+        
+    <button id="box1"  type="submit" >Submit form: </button>
+    <button id="box1"  type="reset">Reset form</button>
+    </form>
+         
+    </div>     
+        
+    </main>    
+         
+  <footer>
+        <h3>Need help? Telephone +353 (0)91 509000 <br> or eMail	customerservices@galwaycoco.ie</h3>
+      <a href="sitemap.html"><h3>site map</h3></a>  
+    </footer>    
+</body>
+    
+</html>
+
+
